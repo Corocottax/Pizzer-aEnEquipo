@@ -1,0 +1,50 @@
+.concepto__div {
+    font-family: $fuente;
+    text-align: center;
+    margin: 5%;
+    color: black;
+    padding: 40% 0%;
+    font-size: 120%;
+
+    @include desktop {
+        padding: 15% 0%;
+    }
+
+    h2 {
+        width: 100%;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+
+    p {
+
+        margin-top: 7%;
+    }
+}
+
+.text-divider {
+    display: flex;
+    align-items: center;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    --text-divider-gap: 1rem;
+  
+    &::before, &::after {
+      content: '';
+      height: 3px;
+      //background-image: linear-gradient(90deg, green 0%, white 50%, red 100%);
+      flex-grow: 1;
+    }
+  
+    &::before {
+      margin-right: var(--text-divider-gap);
+      background-image: linear-gradient(90deg, green 0%, white 90%);
+    }
+  
+    &::after {
+      margin-left: var(--text-divider-gap);
+      background-image: linear-gradient(90deg, white 0%, red 100%);
+    }
+}

@@ -1,0 +1,51 @@
+.inicio {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+
+        font-size: 350%;
+        margin: 50px 10px;
+        text-align: center;
+        font-family: $fuente;
+
+        @include movil {
+            margin: 50px 20px;
+        }
+
+        .span_principal {
+            display: inline-block;
+        }
+
+
+    }
+    
+
+    img {
+
+        margin-top: 70px;
+        width: 60%;
+
+        @include desktop {
+            width: 40%;
+        }
+
+    }
+
+}
+
+.bandera-verde {
+    color: $verde;
+}
+
+.bandera-blanco {
+    color: $blanco;
+}
+
+.bandera-rojo {
+    color: $rojo;
+}

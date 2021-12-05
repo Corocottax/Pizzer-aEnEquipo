@@ -1,0 +1,32 @@
+//typo
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fuzzy+Bubbles&family=M+PLUS+1+Code:wght@200&display=swap');
+
+
+//utilities
+@import "./utilities/colors";
+@import "./utilities/responsive";
+
+//block - layouts
+@import "./block/navbar";
+@import "./block/hero";
+@import "./block/concepto";
+@import "./block/contacto";
+@import "./block/menu";
+@import "./block/reservas";
+
+//base
+@import "./base/typo";
+@import "./base/reset";
+@import "./base/normalize";
+
+body {
+    height: 23423px;
+    width: 100%;
+    background-color: brown;
+    background-image: url("https://www.transparenttextures.com/patterns/ravenna.png");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+

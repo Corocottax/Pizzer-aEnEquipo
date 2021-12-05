@@ -1,0 +1,44 @@
+// =============================================================================
+// _responsive.scss : Viewports
+// MIT License
+// =============================================================================
+
+// =============================================================================
+// _responsive.scss settings
+// =============================================================================
+
+$movil: 425px;
+$tablet: 768px;
+$desktop: 992px;
+$large: 1200px;
+$personalizado: 1300px;
+
+@mixin movil {
+  @media only screen and (max-width: $movil) {
+    @content;
+  }
+}
+
+@mixin personalizado {
+  @media only screen and (max-width: $personalizado) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large) {
+    @content;
+  }
+}
