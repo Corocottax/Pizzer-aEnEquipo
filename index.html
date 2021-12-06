@@ -1,148 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
     <title>Pizzería Jonti</title>
 
     <!--icono-->
 
-    <link rel="icon" href="./assets/hero.png">
+    <link rel="icon" href="./assets/hero.png" />
 
-    <link rel="stylesheet" href="./styles/main.css">
-
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
     <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="./assets/Pizzeria Jonti.png" alt="icono pizzeria jonti" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio"
+                  >Inicio</a
+                >
+              </li>
 
-            <div class="container-fluid">
+              <li class="nav-item">
+                <a class="nav-link" href="#concepto">Concepto</a>
+              </li>
 
-                <img src="./assets/Pizzeria Jonti.png" alt="icono pizzeria jonti">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                
-                    <span class="navbar-toggler-icon"></span>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menú</a>
+              </li>
 
-                </button>
+              <li class="nav-item">
+                <a class="nav-link" href="./reservas.html">Reservas</a>
+              </li>
 
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#concepto">Concepto</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#menu">Menú</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="./reservas.html">Reservas</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-          </nav>
-
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <section id="inicio" class="inicio">
+        <img
+          src="./assets/Pizzeria Jonti.png"
+          alt="logo de nuestra pizzeria jonti"
+        />
 
-        <section id="inicio" class="inicio">
+        <h1>
+          Directamente de
+          <span class="span_principal">
+            <span class="bandera-verde">I</span>
+            <span class="bandera-verde">T</span>
+            <span class="bandera-blanco">A</span>
+            <span class="bandera-blanco">L</span>
+            <span class="bandera-rojo">I</span>
+            <span class="bandera-rojo">A</span>
+          </span>
+          a tu plato.
+        </h1>
+      </section>
 
-                <img src="./assets/Pizzeria Jonti.png" alt="logo de nuestra pizzeria jonti">
-
-                <h1>Directamente de 
-                    <span class="span_principal">
-                    <span class="bandera-verde">I</span>
-                    <span class="bandera-verde">T</span>
-                    <span class="bandera-blanco">A</span>
-                    <span class="bandera-blanco">L</span>
-                    <span class="bandera-rojo">I</span>
-                    <span class="bandera-rojo">A</span>
-                    </span> 
-                    a tu plato.
-                </h1>
-
-        </section>
-
-        <section id="concepto" class="concepto">
-    
-            <div class="concepto__div">
-            <h2 class="text-divider">Concepto</h2>
-            <p><strong>Pizzería Jonti</strong> es un fantástico local donde intentamos traer platos típicos italianos directamente a tu plato aquí en <strong>Madrid</strong>.</p>
-            <p>Disfruta de nuestra maravillosa variedad de pizzas junto a tus seres más queridos y regalales una noche increíble.</p>
-            <p>Disponemos de increíbles descuentos para grupos, fiestas y celebraciones.</p>
+      <section id="concepto" class="concepto">
+        <div class="concepto__div">
+          <h2 class="text-divider">Concepto</h2>
+          <p>
+            <strong>Pizzería Jonti</strong> es un fantástico local donde
+            intentamos traer platos típicos italianos directamente a tu plato
+            aquí en <strong>Madrid</strong>.
+          </p>
+          <p>
+            Disfruta de nuestra maravillosa variedad de pizzas junto a tus seres
+            más queridos y regalales una noche increíble.
+          </p>
+          <p>
+            Disponemos de increíbles descuentos para grupos, fiestas y
+            celebraciones.
+          </p>
         </div>
+      </section>
 
-        </section>
+      <section id="menu" class="menu">
+        <article class="carta__italiana">
+          <div class="item1">
+            <h2 class="text-divider2">Carta</h2>
+          </div>
 
-        <section id="menu" class="menu">
-     
-            <div class="carta__italiana">
-
-                <div class="item1">
-                
-                    <h2 class="text-divider2">Carta</h2>
-                    
+          <div class="item2">
+            <h2 class="text-divider2">Pizzas</h2>
+            <ul>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Margaritta</h4>
+                  <p>10€</p>
                 </div>
-
-                <div class="item2">
-
-                    <h2 class="text-divider2">Pizzas</h2>
-
+                <p>
+                  Salsa de tomate, mozzarella, albahaca, orégano y aceite de
+                  oliva.
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">4 quesos</h4>
+                  <p>12€</p>
                 </div>
-
-                <div class="item3">
-
-                    <h2 class="text-divider2">Pizzas vegetarianas</h2>
-
+                <p>
+                  Queso gorgonzola, natural de Milán; el queso parmesano,
+                  originario de la ciudad de Parma; y el queso mozzarella,
+                  nacido en Campania.
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Napolitana</h4>
+                  <p>10€</p>
                 </div>
-
-                <div class="item4">
-
-                    <h2 class="text-divider2">Postres y bebidas</h2>
-
+                <p>
+                  Salsa de tomate, queso mozzarella, anchoas, orégano,
+                  alcaparras y aceite de oliva.
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Diávola</h4>
+                  <p>15€</p>
                 </div>
+                <p>
+                  Chorizo, salami, incluso chile y una cantidad generosa de
+                  queso con carácter.
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">4 estaciones</h4>
+                  <p>12€</p>
+                </div>
+                <p>
+                  Alcachofas (primavera), aceitunas con tomate y albahaca
+                  (verano), champiñones (otoño) y jamón serrano o cocido
+                  (inverno).
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Carbonara</h4>
+                  <p>11€</p>
+                </div>
+                <p>Huevo, queso parmesano, sal y pimienta</p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Calzone</h4>
+                  <p>13€</p>
+                </div>
+                <p>Queso, carne, atún, vegetales, etc.</p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Hawaiana</h4>
+                  <p>1€</p>
+                </div>
+                <p>Piña.</p>
+              </li>
+            </ul>
+          </div>
 
-            </div>
-            
-        </section>
+          <div class="item3">
+            <h2 class="text-divider2">Veggies</h2>
+            <ul>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Brócoli</h4>
+                  <p>10€</p>
+                </div>
+                <p>
+                  Verduras troceadas, tomate triturado, aceite, aceitunas,
+                  orégano.
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">La Veggie</h4>
+                  <p>10€</p>
+                </div>
+                <p>
+                  Berenjena mediana, tomate de ensalada, tomate frito, pimiento
+                  rojo grande, aceitunas.
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Aguanueces</h4>
+                  <p>10€</p>
+                </div>
+                <p>
+                  Salsa de tomate casera, pimiento rojo picado, cebolla picada,
+                  berenjena fina, champiñones laminados, aguacate y nueces.
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Halloween</h4>
+                  <p>10€</p>
+                </div>
+                <p>
+                  Calabaza, burrata, pimientos secos, tomate concentrado,
+                  aguacate, aceitunas negras, orégano, aceite.
+                </p>
+              </li>
+            </ul>
+          </div>
 
+          <div class="item4">
+            <h2 class="text-divider2">Postres</h2>
+            <ul>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Panna cotta</h4>
+                  <p>10€</p>
+                </div>
+                <p>Nata, azúcar, gelatina, vainilla, chocolate.</p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Tiramisú</h4>
+                  <p>10€</p>
+                </div>
+                <p>
+                  Queso Mascarpone, huevo, azúcar glass, Amaretto, cacao, café.
+                </p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Gelato</h4>
+                  <p>10€</p>
+                </div>
+                <p>De cualquier soabor que imagines.</p>
+              </li>
+              <li>
+                <div class="nombres-carta">
+                  <h4 class="text-divider3">Cannoli</h4>
+                  <p>10€</p>
+                </div>
+                <p>
+                  Azúcar, harina, manteca, cacao, canela, Marsala, vinagre,
+                  huevo, ricotta, chocolate.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
-
-        <div id="contacto">
-
-        </div>
-
+      <div class="footer" id="contacto">
+        <ul>
+          <li>
+            <a href="https://instagram.com">
+              <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Logo Instagram">
+            </a>
+          </li>
+          <li><a href="tel:999888777">999888777</a></li>
+          <li><a href="mailto:jonti@pizzeria.com">jonti@pizzeria.com</a></li>
+        </ul>
+      </div>
     </footer>
-
 
     <!--bootstrap-->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

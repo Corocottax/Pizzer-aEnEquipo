@@ -5,14 +5,15 @@
 //utilities
 @import "./utilities/colors";
 @import "./utilities/responsive";
+@import "./utilities/mixins";
 
 //block - layouts
 @import "./block/navbar";
 @import "./block/hero";
 @import "./block/concepto";
-@import "./block/contacto";
 @import "./block/menu";
 @import "./block/reservas";
+@import "./block/contacto";
 
 //base
 @import "./base/typo";
@@ -20,7 +21,7 @@
 @import "./base/normalize";
 
 body {
-    height: 23423px;
+    height: 100%;
     width: 100%;
     background-color: brown;
     background-image: url("https://www.transparenttextures.com/patterns/ravenna.png");

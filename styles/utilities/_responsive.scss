@@ -19,14 +19,8 @@ $personalizado: 1300px;
   }
 }
 
-@mixin personalizado {
-  @media only screen and (max-width: $personalizado) {
-    @content;
-  }
-}
-
 @mixin tablet {
-  @media only screen and (max-width: $tablet) {
+  @media only screen and (min-width: $tablet) {
     @content;
   }
 }
@@ -39,6 +33,12 @@ $personalizado: 1300px;
 
 @mixin large {
   @media only screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin personalizado {
+  @media only screen and (max-width: $personalizado) {
     @content;
   }
 }
