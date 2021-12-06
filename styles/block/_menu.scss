@@ -55,6 +55,7 @@
     grid-template-rows: 70px auto auto;
     margin: 10%;
     border: solid 2px black;
+    
 
     @include desktop{
         height: 1400px;
@@ -111,6 +112,13 @@
     grid-column: 1/2;
     grid-row: 2/4;
     
+    @include movil {
+
+        overflow: scroll;
+
+    }
+
+    
 
     @include licarta;
 }
@@ -125,6 +133,12 @@
 
 .item4 {
     grid-column: 2/3;
+
+    @include movil {
+
+        overflow: scroll;
+
+    }
 
     @include licarta;
 }

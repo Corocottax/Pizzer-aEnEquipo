@@ -307,6 +307,12 @@
   grid-row: 2/4;
 }
 
+@media only screen and (max-width: 425px) {
+  .item2 {
+    overflow: scroll;
+  }
+}
+
 .item2 li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +371,12 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+@media only screen and (max-width: 425px) {
+  .item4 {
+    overflow: scroll;
+  }
 }
 
 .item4 li {
