@@ -49,16 +49,23 @@
 .carta__italiana {
     background-image: url("https://www.transparenttextures.com/patterns/ravenna.png");
     background-color: whitesmoke;
-    height: 600px;
+    height: 1600px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 70px auto auto;
     margin: 10%;
     border: solid 2px black;
 
-    div {
+    @include desktop{
+        height: 1400px;
+    }
+
+    .item1, .item2, .item3, .item4 {
         border: solid 2px black;
-        text-align: center;
+        ul{
+            margin: 0 5px;
+        }
+        /* text-align: center; */
     }
 }
 
@@ -103,13 +110,60 @@
 .item2 {
     grid-column: 1/2;
     grid-row: 2/4;
+    
+
+    @include licarta;
 }
 
 .item3 {
     grid-column: 2/3;
+
+    @include licarta;
+
+    
 }
 
 .item4 {
     grid-column: 2/3;
+
+    @include licarta;
 }
 
+.text-divider3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    --text-divider-gap: 1rem;
+    font-family: $fuente;
+    width: 92%;
+  
+    &::after {
+      content: '';
+      height: 2px;
+      //background-image: linear-gradient(90deg, green 0%, white 50%, red 100%);
+      flex-grow: 1;
+    }
+  
+    
+  
+    &::after {
+      margin-left: var(--text-divider-gap);
+      background-image: linear-gradient(90deg, green 0%, white 50%, red 100%);
+    }
+    
+}
+
+.nombres-carta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        padding-left: 12px;
+    }
+}

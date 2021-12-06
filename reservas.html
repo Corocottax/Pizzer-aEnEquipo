@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" href="./assets/hero.png" />
     <title>Reservas</title>
-</head>
-<body>
-    
+  </head>
+  <body class="altura">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="./assets/Pizzeria Jonti.png" alt="icono pizzeria jonti" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#concepto">Concepto</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#menu">Menú</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./reservas.html">Reservas</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <form class="formulario" method="get">
+        <h1>Reserva</h1>
+
+        <label class="fecha" for="fechares">Fecha</label>
+        <input id="fechares" type="date" name="fechares" required />
+
+        <label for="numpers">Numero de personas</label>
+        <input id="numpers" type="number" min="1" max="6" name="numpers" required />
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="user_email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+
+        <label for="telf">Teléfono móvil</label>
+        <input type="number" id="telf" name="telf" required />
+
+        <label for="message">Petición personal:</label>
+        <br />
+        <textarea
+          id="message"
+          name="user-message"
+          placeholder="   Escribe aqui tu petición."
+          rows="5"
+          cols="20"
+        ></textarea>
+      <input class="boton" type="submit" />
+    </form>
+    <br />
+    <br />
+    <footer>
+    <div class="footer" id="contacto">
+      <ul>
+        <li>
+          <a href="https://instagram.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Logo Instagram">
+          </a>
+        </li>
+        <li><a href="tel:999888777">999888777</a></li>
+        <li><a href="mailto:jonti@pizzeria.com">jonti@pizzeria.com</a></li>
+      </ul>
+    </div>
+  </footer> 
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+ 
+  
 </body>
 </html>

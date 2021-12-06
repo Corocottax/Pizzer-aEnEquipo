@@ -6,6 +6,8 @@
   position: fixed;
   top: 1;
   width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .navbar img {
@@ -91,12 +93,13 @@
 }
 
 .inicio img {
-  margin-top: 70px;
+  margin-top: 120px;
   width: 60%;
 }
 
 @media only screen and (min-width: 992px) {
   .inicio img {
+    margin-top: 70px;
     width: 40%;
   }
 }
@@ -223,7 +226,7 @@
 .carta__italiana {
   background-image: url("https://www.transparenttextures.com/patterns/ravenna.png");
   background-color: whitesmoke;
-  height: 600px;
+  height: 1600px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -234,9 +237,19 @@
   border: solid 2px black;
 }
 
-.carta__italiana div {
+@media only screen and (min-width: 992px) {
+  .carta__italiana {
+    height: 1400px;
+  }
+}
+
+.carta__italiana .item1, .carta__italiana .item2, .carta__italiana .item3, .carta__italiana .item4 {
   border: solid 2px black;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.carta__italiana .item1 ul, .carta__italiana .item2 ul, .carta__italiana .item3 ul, .carta__italiana .item4 ul {
+  margin: 0 5px;
 }
 
 .text-divider2 {
@@ -294,16 +307,258 @@
   grid-row: 2/4;
 }
 
+.item2 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.item2 li p {
+  font-weight: lighter;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: lighter;
+  margin: 10px 0px;
+}
+
 .item3 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
 
+.item3 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.item3 li p {
+  font-weight: lighter;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: lighter;
+  margin: 10px 0px;
+}
+
 .item4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+.item4 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.item4 li p {
+  font-weight: lighter;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: lighter;
+  margin: 10px 0px;
+}
+
+.text-divider3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  --text-divider-gap: 1rem;
+  font-family: "Bebas Neue", sans-serif;
+  width: 92%;
+}
+
+.text-divider3::after {
+  content: '';
+  height: 2px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.text-divider3::after {
+  margin-left: var(--text-divider-gap);
+  background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(50%, white), to(red));
+  background-image: linear-gradient(90deg, green 0%, white 50%, red 100%);
+}
+
+.nombres-carta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nombres-carta p {
+  padding-left: 12px;
+}
+
+.formulario {
+  font-family: "Bebas Neue", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10px;
+}
+
+.formulario label {
+  text-align: center;
+}
+
+.formulario h1 {
+  margin-top: 70px;
+}
+
+.formulario input {
+  border-radius: 15px;
+  margin: 20px 10%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .formulario input {
+    margin: 20px 25%;
+  }
+}
+
+.formulario #fechares {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 150px;
+}
+
+.formulario #numpers {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 150px;
+}
+
+.formulario textarea {
+  border-radius: 15px;
+  margin: 20px 10%;
+}
+
+@media only screen and (min-width: 992px) {
+  .formulario textarea {
+    margin: 20px 25%;
+  }
+}
+
+.boton {
+  background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(50%, white), to(red));
+  background-image: linear-gradient(90deg, green 0%, white 50%, red 100%);
+  margin-bottom: 200px;
+}
+
+.altura {
+  height: 100%;
+}
+
+footer {
+  background-color: whitesmoke;
+  opacity: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+footer div ul {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div ul li {
+  width: 20%;
+  text-align: center;
+}
+
+footer div ul li a {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  color: black;
+}
+
+footer div ul li a:hover {
+  font-size: 20px;
+  -webkit-transition: width 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: black;
+}
+
+footer div ul li a img {
+  height: 20px;
+}
+
+footer div ul li a img:hover {
+  height: 30px;
+  -webkit-transition: width 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 /* Load google's Roboto font*/
@@ -753,7 +1008,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 body {
-  height: 23423px;
+  height: 100%;
   width: 100%;
   background-color: brown;
   background-image: url("https://www.transparenttextures.com/patterns/ravenna.png");

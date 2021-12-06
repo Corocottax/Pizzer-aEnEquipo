@@ -1,0 +1,17 @@
+@mixin licarta {
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    margin-top: 30px;
+
+    p {
+        font-weight: lighter;
+      align-items: flex-start;
+      font-weight: lighter;
+      margin: 10px 0px;
+    }
+  }
+}
+
